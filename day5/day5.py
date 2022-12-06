@@ -1,7 +1,6 @@
 file = open("day5.txt", "r")
 stacks = [[],[],[],[],[],[],[],[],[]]
 line = file.readline()
-move = []
 
 def move_crate(take, num, put):
     for x in range(num):
@@ -28,9 +27,9 @@ for x in range(8):
         stacks[8].append(line[33])
     line = file.readline()
 
-print(stacks)
+
 lst = file.readlines()
-print(lst)
+
 for y in lst:
     if y.strip() != "":
         y= y.split()
