@@ -9,10 +9,9 @@ def no_duplicates():
     return True
 
 for i in range(len(read)):
-    if len(queue) == 14:
-        queue.pop(0)
     queue.append(read[i])
-    if len(queue) == 14:
+    if len(queue) > 14:
+        queue.pop(0)
         if no_duplicates():
             print(i+1)
             break
