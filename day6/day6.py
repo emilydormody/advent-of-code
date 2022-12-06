@@ -1,0 +1,19 @@
+file = open("day6.txt","r")
+read = file.readline()
+
+queue = []
+def no_duplicates():
+    for x in queue:
+        if queue.count(x) > 1:
+            return False
+    return True
+
+for i in range(len(read)):
+    if len(queue) == 4:
+        queue.pop(0)
+    queue.append(read[i])
+    if len(queue) == 4:
+        if no_duplicates():
+            print(i+1)
+            break
+
