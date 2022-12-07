@@ -2,7 +2,7 @@
 #X for Rock, Y for Paper, and Z for Scissors
 #1 for Rock, 2 for Paper, and 3 for Scissors
 #0 if you lost, 3 if the round was a draw, and 6 if you won
-#X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win
+#X means you search to lose, Y means you search to end the round in a draw, and Z means you search to win
 
 
 def choice(opponent, you):

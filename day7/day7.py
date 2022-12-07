@@ -11,7 +11,6 @@ while line != []:
             if line[2] == "..":
                 totals.append(directories.pop())
             else:
-                current = line[2]
                 directories.append(0)
     else:
         if line[0] != "dir":
@@ -19,7 +18,7 @@ while line != []:
                 directories[x] += int(line[0])
     line = file.readline().split()
 
-while directories != []:
+while len(directories) != 0:
     totals.append(directories.pop())
 
 counter = 0
