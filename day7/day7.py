@@ -2,7 +2,7 @@ file = open("day7.txt", "r")
 line = file.readline().split()
 
 path = []
-directories = [] #these two are basically the same, directories just does the math
+directories = []
 
 totals = []
 
