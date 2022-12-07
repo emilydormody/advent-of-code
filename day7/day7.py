@@ -1,7 +1,6 @@
 file = open("day7.txt", "r")
 line = file.readline().split()
 
-path = []
 directories = []
 
 totals = []
@@ -10,12 +9,10 @@ while line != []:
     if line[0] == "$":
         if line[1] == "cd":
             if line[2] == "..":
-                current = path.pop()
                 totals.append(directories.pop())
             else:
                 current = line[2]
                 directories.append(0)
-                path.append(current)
     else:
         if line[0] != "dir":
             for x in range(len(directories)):
